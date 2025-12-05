@@ -9,7 +9,7 @@ public class BallLauncher : MonoBehaviour
 	void Start () {
 		//floatの場合は数字にfを追加する
 		speed = 10.0f;
-		GetComponent<Rigidbody> ().AddForce ((transform.right - transform.up) * speed,
+		GetComponent<Rigidbody> ().AddForce ((transform.right - transform.forward) * speed,
 			ForceMode.VelocityChange);
 	}
 
